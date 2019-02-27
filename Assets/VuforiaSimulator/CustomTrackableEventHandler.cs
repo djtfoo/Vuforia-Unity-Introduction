@@ -30,6 +30,7 @@ public class CustomTrackableEventHandler : MonoBehaviour, ITrackableEventHandler
     protected TrackableBehaviour mTrackableBehaviour;
 
     // for assignment via Inspector
+    [Header("Function Callback on Tracking")]
     [SerializeField]
     protected UnityEvent onTrackingBegin;
     [SerializeField]
@@ -42,10 +43,13 @@ public class CustomTrackableEventHandler : MonoBehaviour, ITrackableEventHandler
     #endregion // PRIVATE_MEMBER_VARIABLES
 
     #region VARIABLES_FOR_TESTING_WITHOUT_CAMERA_OR_MARKER
+    [Header("Tracking Simulation in Editor")]
     [Tooltip("To simulate having tracked the marker, and move it in front of ARCamera")]
     public bool enableTrackingWithoutMarker = false;
+    [HideInInspector]
     [Tooltip("Key to press to track/untrack this ImageTarget")]
     public KeyCode toggleTrackingKey;
+    [HideInInspector]
     [Tooltip("Texture for this ImageTarget's image marker")]
     public Texture imageTargetTexture;
 
