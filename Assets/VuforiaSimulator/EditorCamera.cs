@@ -3,14 +3,14 @@
 * Script to attach to the Camera to move it via key press and rotate by
 * moving mouse while holding down RMB.
 * Author: Foo Jing Ting
-* Date: 27 February 2019
+u Date: 27 February 2019
 ==============================================================================*/
 
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MoveCamera : MonoBehaviour {
+public class EditorCamera : MonoBehaviour {
 
     [SerializeField]
     private KeyCode keyForward = KeyCode.W;
